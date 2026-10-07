@@ -1,0 +1,15 @@
+.status-dropdown { position:relative; justify-self:end; width:136px; font-size:.75rem }
+.status-dropdown-trigger { display:grid; grid-template-columns:1fr 16px; align-items:center; width:100%; min-height:34px; padding:6px 9px 6px 14px; border:1px solid #d5b55e; border-radius:999px; color:#332426; background:#fffaf0; font:inherit; font-weight:600; cursor:pointer; transition:border-color .16s ease,box-shadow .16s ease,background .16s ease }
+.status-dropdown-trigger span { text-align:center }
+.status-dropdown-trigger .icon { width:15px; height:15px; transition:transform .16s ease }
+.status-dropdown-trigger[aria-expanded='true'] { border-color:#a87c0d; box-shadow:0 0 0 3px rgba(212,175,55,.18) }
+.status-dropdown-trigger[aria-expanded='true'] .icon { transform:rotate(180deg) }
+.status-dropdown-trigger.responding { color:#1d4ed8; background:#eef4ff; border-color:#b8ccf2 }
+.status-dropdown-trigger.under-review { color:#5c4a16; background:#fff8df }
+.status-dropdown-trigger.resolved { color:#18733b; background:#edf9f0; border-color:#b9ddc4 }
+.status-dropdown-trigger.active { color:#9b6100; background:#fff7e7 }
+.status-dropdown-menu { position:absolute; top:calc(100% + 6px); right:0; z-index:40; width:100%; overflow:hidden; padding:5px; border:1px solid #e4dacb; border-radius:12px; background:#fff; box-shadow:0 14px 35px rgba(48,30,31,.16) }
+.status-dropdown-menu button { display:block; width:100%; min-height:34px; padding:7px 10px; border:0; border-radius:8px; color:#332426; background:transparent; font:inherit; text-align:center; cursor:pointer }
+.status-dropdown-menu button:hover { color:#65060c; background:#f7efe5 }
+.status-dropdown-menu button.selected { color:#fff; background:#7b1e24 }
+@media (max-width:640px) { .status-dropdown { grid-column:2; justify-self:start } }

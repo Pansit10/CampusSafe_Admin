@@ -1,0 +1,18 @@
+.attachment-composer { display:block }
+.composer-row { display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:10px }
+.attachment-input { display:none }
+.message-composer .attach-button { width:40px; height:40px; color:#7b1e24; border:1px solid #dccfb9; background:#fff9ef; box-shadow:none; font-size:1.45rem }
+.message-composer .send-button { width:42px; height:42px }
+.attachment-preview { display:grid; grid-template-columns:58px minmax(0,1fr) auto; align-items:center; gap:11px; margin-bottom:12px; padding:10px; border:1px solid #eadfca; border-radius:12px; background:#fbf8f1 }
+.attachment-preview > div { width:58px; height:48px; overflow:hidden; border-radius:8px; background:#ede7de }
+.attachment-preview img,.attachment-preview video { width:100%; height:100%; object-fit:cover }
+.attachment-preview span { display:grid; min-width:0; gap:3px }
+.attachment-preview strong { overflow:hidden; color:#2c1d1e; font-size:.82rem; text-overflow:ellipsis; white-space:nowrap }
+.attachment-preview small { color:#8a7a71; font-size:.72rem }
+.attachment-preview button { width:28px; height:28px; border:0; border-radius:50%; color:#7b1e24; background:#f1e7dc; box-shadow:none; font-size:1.2rem }
+.attachment-error { margin:0 0 9px; color:#b4232d; font-size:.78rem }
+.message-content { min-width:0; max-width:100% }
+.sent-media { overflow:hidden; max-width:420px; margin-bottom:7px; border-radius:14px; border:1px solid #eadfca; background:#ede7de; box-shadow:0 8px 22px rgba(67,35,26,.08) }
+.sent-media img,.sent-media video { display:block; width:100%; max-height:340px; object-fit:contain; background:#1f1919 }
+.message-content .sent-media + .chat-bubble { border-radius:10px }
+@media (max-width:600px) { .sent-media{max-width:100%}.attachment-preview{grid-template-columns:48px minmax(0,1fr) auto}.attachment-preview>div{width:48px;height:44px} }

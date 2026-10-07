@@ -1,0 +1,6 @@
+.chat-menu .icon,.attach-button .icon,.send-button .icon,.attachment-preview>button .icon { width:18px; height:18px }
+.chat-menu,.message-composer .attach-button,.message-composer .send-button,.attachment-preview>button { display:grid; place-items:center; transition:transform .16s ease,background-color .16s ease,box-shadow .16s ease }
+.chat-menu:hover,.message-composer .attach-button:hover,.message-composer .send-button:hover,.attachment-preview>button:hover { transform:translateY(-1px) }
+.chat-menu:focus-visible,.message-composer button:focus-visible,.new-chat-button:focus-visible { outline:3px solid rgba(212,175,55,.35); outline-offset:2px }
+.chat-search-filter { display:inline-flex; align-items:center; gap:5px; padding-left:14px; border-left:1px solid #eee4d5; color:#887a72; font-size:.86rem }
+.chat-search-filter .icon { width:15px; height:15px }

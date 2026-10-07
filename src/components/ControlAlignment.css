@@ -1,0 +1,37 @@
+.status-select {
+  min-width: 122px;
+  height: 34px;
+  padding: 5px 30px 5px 12px;
+  border: 1px solid #d8bd72;
+  border-radius: 999px;
+  color: #2c1d1e;
+  background-color: #fffaf0;
+  text-align: center;
+  text-align-last: center;
+  cursor: pointer;
+}
+
+.status-select option {
+  color: #221516;
+  background: #fff;
+  text-align: center;
+}
+
+.status-select:focus {
+  border-color: #b88b18;
+  outline: 3px solid rgba(212, 175, 55, 0.2);
+  outline-offset: 1px;
+}
+
+.message-composer .send-button {
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.message-composer .send-button .icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  transform: translate(-1px, 1px);
+}
